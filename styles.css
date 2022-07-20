@@ -24,7 +24,8 @@
 .attribution p {
   font-size: 0.8rem;
 }
-p b {
+p b,
+span {
   font-size: 0.8rem;
 }
 .background-container {
@@ -33,7 +34,7 @@ p b {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 100vw;
-  height: 250px;
+  height: 220px;
   color: white;
 }
 h1 {
@@ -83,7 +84,7 @@ h1 {
   background-color: white;
   width: 70%;
   border-radius: 15px;
-  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
 }
 .info-container {
   display: flex;
@@ -109,4 +110,105 @@ h1 {
   color: hsl(0, 0%, 17%);
   font-size: 1.2rem;
   font-weight: 700;
+}
+
+/*
+Big-Monitors: 2560px-1440px
+Desktop: 1440px - 1000px
+Tablet: 1000px - 500px
+Mobile: 500px - 300px
+*/
+
+@media (max-width: 1000px) {
+  .background-container {
+    height: 200px;
+  }
+  .search-bar {
+    top: 35%;
+    width: 300px;
+    height: 40px;
+  }
+  .search-input {
+    font-size: 0.7rem;
+    width: 260px;
+    height: 40px;
+  }
+
+  .search-btn {
+    width: 40px;
+    height: 40px;
+  }
+  .infos-display {
+    top: 60%;
+    width: 85%;
+  }
+  .info {
+    font-size: 0.8rem;
+  }
+  .attribution a {
+    font-size: 0.6rem;
+  }
+  .attribution p {
+    font-size: 0.6rem;
+  }
+  p b,
+  span {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1rem;
+  }
+  .search-bar {
+    top: 24%;
+    width: 75%;
+    height: 40px;
+  }
+  .search-input {
+    font-size: 0.5rem;
+    width: 86%;
+    height: 40px;
+  }
+
+  .search-btn {
+    width: 14%;
+    height: 40px;
+  }
+  .infos-display {
+    flex-direction: column;
+    align-items: center;
+    top: 0%;
+    width: 75%;
+    padding: 2% 0;
+  }
+  .info-container {
+    align-items: center;
+    padding: 3%;
+  }
+  .timezone {
+    width: fit-content;
+  }
+  .vl {
+    width: 0;
+    height: 0;
+    border-top: 0px;
+  }
+  .title {
+    font-size: 0.8rem;
+    padding-bottom: 5%;
+  }
+  .info {
+    font-size: 1rem;
+  }
+  .attribution a {
+    font-size: 0.5rem;
+  }
+  .attribution p {
+    font-size: 0.5rem;
+  }
+  p b,
+  span {
+    font-size: 0.5rem;
+  }
 }
