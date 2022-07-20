@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Rubik:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Rubik, monospace;
+  font-size: 1rem;
+}
+.attribution {
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  font-family: Lato, monospace;
+  font-size: 0.5rem;
+  text-align: center;
+  color: black;
+}
+.attribution a {
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.attribution p {
+  font-size: 0.8rem;
+}
+p b {
+  font-size: 0.8rem;
+}
+.background-container {
+  position: relative;
+  background-image: url("./images/pattern-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100vw;
+  height: 250px;
+  color: white;
+}
+h1 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.search-bar {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 400px;
+  height: 50px;
+}
+
+.search-input {
+  font-size: 0.8rem;
+  padding: 15px;
+  width: 350px;
+  height: 50px;
+  border-radius: 10px 0px 0px 10px;
+  border: 0px;
+}
+
+.search-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  border: 0px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.infos-display {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  width: 70%;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+}
+.info-container {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding: 3% 7% 3% 3%;
+}
+.timezone {
+  width: 25%;
+}
+.vl {
+  margin: auto;
+  height: 55px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+}
+.title {
+  color: hsl(0, 0%, 59%);
+  font-variant: small-caps;
+  font-weight: 500;
+}
+.info {
+  color: hsl(0, 0%, 17%);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
