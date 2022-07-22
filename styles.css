@@ -67,13 +67,16 @@ h1 {
   position: absolute;
   top: 0;
   right: 0;
+  cursor: pointer;
   background-color: black;
   width: 50px;
   height: 50px;
   border: 0px;
   border-radius: 0px 10px 10px 0px;
 }
-
+.search-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
 .infos-display {
   position: absolute;
   top: 47%;
@@ -93,8 +96,8 @@ h1 {
   padding: 3% 7% 3% 3%;
 }
 .timezone {
-  padding: 3% 3% 3% 3%;
   width: 25%;
+  padding: 3% 3% 3% 3%;
 }
 .vl {
   margin: auto;
@@ -112,7 +115,6 @@ h1 {
   font-size: 1.2rem;
   font-weight: 700;
 }
-
 /*
 Big-Monitors: 2560px-1440px
 Desktop: 1440px - 1000px
