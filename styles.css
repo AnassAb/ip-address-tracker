@@ -202,6 +202,7 @@ Mobile: 500px - 300px
     padding-bottom: 5%;
   }
   .info {
+    text-align: center;
     font-size: 1rem;
   }
   .attribution a {
