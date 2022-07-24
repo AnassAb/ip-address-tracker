@@ -1,47 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css" type="text/css">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-		<title>IP Address Tracker</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./styles.css" type="text/css">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+		integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+		crossorigin="" />
+	<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+		integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+		crossorigin=""></script>
+	<title>IP Address Tracker</title>
 </head>
+
 <body>
-  <div class="background-container">
+	<div class="background-container">
 		<h1>IP Address Tracker</h1>
 		<div class="search-bar">
-    	<input type="text" placeholder="Search for any IP address or domain" name="search" class="search-input" id="search-input">
-    	<button type="submit" class="search-btn" id="search-btn">
-      	<img src="./images/icon-arrow.svg" alt="Search Button's Icon" class="arrow-icon">
+			<input type="text" placeholder="Search for any IP address or domain" name="search" class="search-input"
+				id="search-input">
+			<button type="submit" class="search-btn" id="search-btn">
+				<img src="./images/icon-arrow.svg" alt="Search Button's Icon" class="arrow-icon">
 			</button>
 		</div>
 		<div class="infos-display">
 			<div class="info-container">
 				<h2 class="title">ip address</h2>
-				<p class="info" id="ip">192.212.174.101</p>
+				<p class="info" id="ip"></p>
 			</div>
 			<div class="vl"></div>
 			<div class="info-container">
 				<h2 class="title">location</h2>
-				<p class="info" id="location">Brooklyn, NY 10001</p>
+				<p class="info" id="location"></p>
 			</div>
 			<div class="vl"></div>
 			<div class="info-container timezone">
 				<h2 class="title">timezone</h2>
-				<p class="info" id="timezone">UTC-05:00</p>
+				<p class="info" id="timezone"></p>
 			</div>
 			<div class="vl"></div>
 			<div class="info-container">
 				<h2 class="title">isp</h2>
-				<p class="info" id="isp">SpaceX Starlink</p>
+				<p class="info" id="isp"></p>
 			</div>
 		</div>
 	</div>
+
+	<div id="map"></div>
+
+	<script src="map.js"></script>
 	<script src="index.js"></script>
-  <div class="attribution">
-    <p><b>© Frontend Mentor Challenge - </b>Made with <span style="color: #ff0000;">&#10084;</span> by <a href="https://twitter.com/AnassAb01" target="_blank" " >Anass Ab</a> </p>
-  </div>
+
+	<div class="attribution">
+		<p><b>© Frontend Mentor Challenge - 2022 | </b>Made with <span style="color: #ff0000;">&#10084;</span> by <a
+				href="https://twitter.com/AnassAb01" target="_blank" " >Anass Ab</a> </p>
+	</div>
 </body>
+
 </html>

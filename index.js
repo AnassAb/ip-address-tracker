@@ -21,8 +21,9 @@ input.addEventListener("keypress", (event) => {
     button.click();
   }
 });
+
 function IpTracker() {
-  let api_key = "at_fdUGt22nmZFwQjTZiSNBtJvHtO9sW";
+  let api_key = "at_KvyxvoYNVMVQFXtixULt6nlHoDemY";
   let url =
     "https://geo.ipify.org/api/v2/country,city?apiKey=" +
     api_key +
@@ -46,11 +47,21 @@ function setData(data) {
     data.location.postalCode;
   let timezone_value = "UTC" + data.location.timezone;
   let isp_value = data.isp;
-  let lat = data.location.lat;
-  let lng = data.location.lng;
 
   ip.innerHTML = ip_value;
   location_id.innerHTML = location_value;
   timezone.innerHTML = timezone_value;
   isp.innerHTML = isp_value;
+
+  let lat = data.location.lat;
+  let lng = data.location.lng;
+  //Check if map is already initialised
+  //If 'YES' : remove it or put it off
+  //Else: Just continue !
+  var container = L.DomUtil.get("map");
+  if (container != null) {
+    container._leaflet_id = null;
+  }
+
+  setMap(lat, lng);
 }
