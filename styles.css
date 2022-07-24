@@ -263,6 +263,7 @@ Mobile: -500px
     padding: 2% 0;
   }
   .info-container {
+    text-align: center;
     align-items: center;
     padding: 3%;
   }
