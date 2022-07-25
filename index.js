@@ -60,8 +60,8 @@ function setData(data) {
   //Else: Just continue !
   var container = L.DomUtil.get("map");
   if (container != null) {
-    map.off();
-    map.remove();
+    container.off();
+    container.remove();
     container._leaflet_id = null;
   }
 
